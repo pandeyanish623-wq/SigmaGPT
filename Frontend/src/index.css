@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  
+  .prose-custom p {
+    margin-bottom: 0.75rem;
+    line-height: 1.75;
+  }
+
+  .prose-custom p:last-child {
+    margin-bottom: 0;
+  }
+
+  .prose-custom h1,
+  .prose-custom h2,
+  .prose-custom h3 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .prose-custom h1 { font-size: 1.25rem; }
+  .prose-custom h2 { font-size: 1.1rem; }
+  .prose-custom h3 { font-size: 1rem; }
+
+  .prose-custom ul,
+  .prose-custom ol {
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .prose-custom ul { list-style-type: disc; }
+  .prose-custom ol { list-style-type: decimal; }
+
+  .prose-custom li {
+    margin-bottom: 0.25rem;
+    line-height: 1.6;
+  }
+
+  
+  .prose-custom code:not(pre code) {
+    background-color: #2a2a2a;
+    color: #e879f9;
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+    font-family: ui-monospace, monospace;
+  }
+
+  
+  .prose-custom pre {
+    background-color: #0d0d0d;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 0.75rem 0;
+    font-size: 0.82rem;
+    border: 1px solid #2a2a2a;
+  }
+
+  .prose-custom pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+    font-size: inherit;
+  }
+
+  
+  .prose-custom blockquote {
+    border-left: 3px solid #4b5563;
+    padding-left: 1rem;
+    color: #9ca3af;
+    margin: 0.75rem 0;
+    font-style: italic;
+  }
+
+ 
+  .prose-custom a {
+    color: #60a5fa;
+    text-decoration: underline;
+  }
+
+ 
+  .prose-custom strong {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  
+  .prose-custom table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.75rem 0;
+    font-size: 0.85rem;
+  }
+
+  .prose-custom th,
+  .prose-custom td {
+    border: 1px solid #374151;
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+  }
+
+  .prose-custom th {
+    background-color: #1f2937;
+    color: #d1d5db;
+    font-weight: 600;
+  }
+
+  .prose-custom td {
+    color: #e5e7eb;
+  }
+
+  .list:hover .trash-icon {
+    opacity: 1;
+  }
+}
